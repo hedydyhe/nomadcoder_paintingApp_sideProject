@@ -3,6 +3,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 canvas {
@@ -10,11 +12,67 @@ canvas {
 	width: 800px;
 	height: 800px;
 	border: 3px solid black;
-	box-shadow: 2px 2px 2px 2px;
+	box-shadow: 1px 1px 10px 1px gray;
+}
+
+.lineWidth {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+.lineWidth span,
+.colors span,
+#mode-btn,
+#destroy-btn,
+#eraser-btn,
+#save-image {
+	font-weight: 500;
+	border: 1px solid gray;
+	padding: 5px 10px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	background-color: cadetblue;
+	color: whitesmoke;
+}
+
+.lineWidth input[type="range"] {
+	width: 100%;
+	height: 4px;
+}
+
+.colors span {
+	display: block;
+	margin-right: 10px;
+}
+
+#color {
+	width: 60px;
+	margin-bottom: 5px;
 }
 
 .color-option {
-	width: 50px;
+	margin-top: 2px;
+	width: 60px;
 	height: 50px;
 	cursor: pointer;
+	border: 1px solid gray;
+}
+
+#mode-btn,
+#destroy-btn,
+#eraser-btn,
+#text {
+	margin-right: 10px;
+}
+
+#img-file {
+	width: 170px;
+}
+
+#text {
+	border: 2px solid cadetblue;
+	padding: 3px 5px;
 }
