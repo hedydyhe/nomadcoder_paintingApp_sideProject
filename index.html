@@ -11,8 +11,12 @@
 
 <body>
   <canvas></canvas>
-  <input id="line-width" type="range" min="1" max="10" value="5" />
-  <div>
+  <div class="lineWidth">
+    <span>Line width</span>
+    <input id="line-width" type="range" min="1" max="10" value="5" />
+  </div>
+  <div class="colors">
+    <span>Color</span>
     <input id="color" type="color" />
     <div class="color-option" style="background-color: #ff3838" data-color="#ff3838"></div>
     <div class="color-option" style="background-color: #ffb8b8" data-color="#ffb8b8"></div>
@@ -24,6 +28,12 @@
     <div class="color-option" style="background-color: #18dcff" data-color="#18dcff"></div>
     <div class="color-option" style="background-color: #7d5fff" data-color="#7d5fff"></div>
   </div>
+  <button id="mode-btn">Fill</button>
+  <button id="destroy-btn">Destroy</button>
+  <button id="eraser-btn">Eraser</button>
+  <input type="file" accept="image/*" id="img-file" />
+  <input type="text" placeholder="Write and then double click" id="text" />
+  <button id="save-image">Save image</button>
   <script src="app.js"></script>
 </body>
 
